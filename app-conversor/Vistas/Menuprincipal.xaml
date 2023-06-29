@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_conversor.Vistas.Menuprincipal"
+             NavigationPage.HasNavigationBar="False" Visual="Material">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#010001">
+            <Label Text="Conversor"
+                   TextColor="#fff"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,0"
+                   HorizontalOptions="Center" />
+            <Frame VerticalOptions="FillAndExpand"
+                   BackgroundColor="#141214"
+                   Margin="20"
+                   CornerRadius="20"
+                   HasShadow="False">
+                <StackLayout Spacing="20"
+                             VerticalOptions="Center">
+                    <Image  HeightRequest="190"
+                            Margin="10"
+                            Source="cintametrica.png" />
+                    <Label Text="(cm) a (m)"
+                           FontAttributes="Bold"
+                           FontSize="40"
+                           TextColor="#fff"
+                           HorizontalOptions="Center" />
+                    <Button Text="Iniciar"
+                            TextTransform="None"
+                            TextColor="#141214"
+                            BackgroundColor="#30ff5a"
+                            CornerRadius="10"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            x:Name="btniniciar"
+                            Clicked="btniniciar_Clicked" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
+    
